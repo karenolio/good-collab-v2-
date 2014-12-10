@@ -1,0 +1,332 @@
+/*testing*/
+
+
+.two-texts { /* this would be the CSS for centering everything below the top banner */
+max-width: 1000px;
+margin-left: 100px;
+display: block; /*this moves the "How it Works" and forms to go below the 3 pics!*/
+clear:left;
+}
+ 
+.topsection { /*div section for keyword search bar on Page 2*/
+  max-width: 100%;
+  height: 75px;
+  margin-left: 0px;
+  display: block; /*this moves the "How it Works" and forms to go below the 3 pics!*/
+  clear:left;
+  background-color: gray;
+}
+
+body {
+margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: #EDEFED;
+}
+
+.main-title { /*this is good collab*/
+background-color: #4CAF50;
+height: 70px;
+width: 100%;
+padding-top: 15px;
+padding-bottom: 20px;
+padding-left:5%;
+/*padding-right: 30px;*/
+font-family: 'Oxygen', sans-serif;
+font-weight: 700;
+float: left;
+font-size: 28px;
+color: #ffffff;
+/*position: absolute;*/
+position: relative;
+top: 0px;
+left:0%;
+display: inline-block;
+}
+
+
+#bodytext { /* the How it Works section*/
+
+font-family: 'lato', sans-serif;
+font-size: 20px;
+width: 1000px;
+color: #565a5c;
+
+
+/*clear:both; this moves the "How it Works" and forms to go below the 3 pics!*/
+}
+
+.bold {
+font-weight: bold;
+}
+
+.form { /* placement of the form section*/
+  font-family: 'lato', sans-serif;
+}    
+    
+form { /*form styling goes here*/
+  border: none;
+  font: 18px/1.2 'lato', sans-serif;
+  overflow: hidden;
+  margin-left: 50px;
+  color: #565a5c;
+}
+
+fieldset {
+  border: 0;
+  /*margin: auto;*/
+  padding: 0;
+}
+
+option {
+  border-radius: 1px;
+  font: 18px/1.2 'lato', sans-serif;
+  color: #565a5c;
+}
+
+.btn-default { /*Get matches button - HOW DO I MAKE THIS NOT MOVE ALL THE WAY TO THE RIGHT WHEN I SHRINK THE SCREEN?*/ 
+  border: 0;
+  background: #FF5722;
+  margin-top: 40px; /*space above button*/
+  margin-bottom: 70px; /*space below button*/
+  padding: 10px 27px;
+  font-size: 20px;
+  color: #ffffff;
+  border-bottom: thick #000000;
+  font-family: 'lato', sans-serif;
+  border-radius: 2px;
+  margin-left: 50px;
+
+}
+
+.btn-default:hover { /*Get matches button on hover*/
+  background: #FF6E40;
+}
+
+/*FOR CAROUSEL FOR CAROUSEL FOR CAROUSEL FOR CAROUSEL FOR CAROUSEL FOR CAROUSEL*/
+
+.image-shown
+{
+  display: inline-block;
+}
+
+/*.image-hidden added to all pictures after the first one so it's hidden initially*/
+.image-hidden
+{
+  display: none;
+}
+
+.carousel-outer{
+  margin-left: -48px;
+  margin-right: 0px;
+
+
+}
+
+.carousel-inner /*container that holds images*/
+{
+  top: 0px;
+  position: relative;
+  /*margin-top: 134px;*/ /*tinker space between top bar and photo carousel*/
+  padding-top: 0px;
+  max-width: 100%;
+  max-height: 50%;
+  display: inline-block;
+  position: relative;
+  float: left; /*need to float this in order to have pics inbetween Prev and Next */
+}
+ 
+.carousel-inner img /*targets images inside carousel*/
+{
+  width: 100%; /*basically, asks this to take width to parent's (carousel inner) container */
+  height: 20%;
+}
+
+/*.previousLink, .nextLink {
+  float: left; so that the "Previous" and "Next" are not above and below the images
+
+}*/
+
+/*.previousLink, .nextLink {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+}*/
+
+/*.previousLink
+{
+  position: relative;
+  padding-top: 10px;
+  padding-left: 100px;
+  float:right;
+}
+
+.nextLink {
+  position: relative;
+  padding-top: 800px;
+  float:right;
+  padding-left: 50px;
+  font-size: 50px;
+  color: #ffffff;
+  opacity: .5;
+  text-decoration: none;
+}*/
+
+
+/*Styling for Search form on page 2*/
+/*.searchform {
+  position: relative;
+  width: auto;
+}*/
+
+#searchtwo { 
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 1px;
+  margin-left: 20%;
+  background:rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-family: 'lato', sans-serif;
+  font-style: italic;
+  border: 0px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  position: relative;
+  width: 50%;
+}
+
+#searchtwo:hover{
+  background:rgba(0, 0, 0, 0.3);
+  color:black;
+}
+
+#buttontwo {
+  display: inline;
+  padding-top:5px;
+  padding-bottom: 9px;
+  margin-top: 17px;
+  margin-left: -3px;
+  background-color: #4CAF50;
+  color:#ffffff;
+  font-size: 23px;
+  font-family: 'lato', sans-serif;
+  font-weight: 700;
+  border: 0px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  width: 140px;
+}
+
+#buttontwo:hover {
+  background-color:#96BA5A;
+  color:#ffffff;
+}
+
+/*left section on page two*/
+.leftpagetwo {
+  height: 1600px; 
+  width: 40%;
+  background-color: #EDEFED;
+  float: left;
+}
+
+.rightpagetwo {
+  height: 1600px; 
+  width: 60%;
+  background-color: black; 
+  float: right;
+}
+
+#footerpagetwo {
+  height: 80px;
+  width: 100%;
+  background-color: #4CAF50;
+  clear: both;
+}
+
+/*RIBBON CODE STARTS HERE*/
+.ribbon-wrapper-green {
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+
+.ribbon-green {
+  font: bold 22px Sans-Serif;
+  color: #FFF;
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -5px;
+  top: 15px;
+  width: 120px;
+  background-color: #FFFFFF;
+  color: gray;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.ribbon-green:before, .ribbon-green:after {
+  content: "";
+  border-top:   3px solid gray;   
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.ribbon-green:before {
+  left: 0;
+}
+.ribbon-green:after {
+  right: 0;
+}
+
+
+/*RIBBON CODE ENDS HERE*/
+
+#map-canvas {
+    width: 90%;
+    height: 250px;
+    position: relative;
+    margin-left: 28px;
+    border-color: gray;
+    border: 3px;
+}
+ 
+#country {
+  width: 100%;
+  height: 50px; 
+  color: gray;
+  background-color: #F2EEEA;
+  position: relative;
+} 
+
+p{ /*p = paragraph styling for "Country" and "Project Type" on Page two*/
+  font-size: 20px;
+  font-family: 'lato', sans-serif;
+  margin-top: 30px;
+  margin-left: 28px;
+  color: #565a5c;
+}
+
+.footerstyle {
+  font-size: 18px;
+  font-family: 'lekton', sans-serif;
+  font-style: italic;
+  padding-top: 32px;
+  margin-left: 35%;
+  color: white;
+}
+
+

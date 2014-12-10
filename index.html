@@ -1,0 +1,171 @@
+<!-- GOOD COLLAB V2 (with jQuery and image carousel) -->
+<!doctype html>
+
+<html lang="en">
+
+<head> 
+<meta charset="UTF-8">
+<title>Good Collab</title>
+<link type="type/css" rel="stylesheet" href="css/stylesheet.css"> </link>
+<meta name="description" content="Collaborating for a good cause">
+
+<link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic|Lato:300,400,700|News+Cycle:400,700|Oxygen:400,300,700|Roboto:400,500|Chivo|Prata' rel='stylesheet' type='text/css'>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+    function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 5,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+    }
+      google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+</head>
+
+<body>
+<div class="main-title"> good <br> collab </div>
+
+<!-- START FIRST PAGE HTML HERE -->
+<div class = "firstpage"> 
+
+	<div id="white-container"> </div>
+
+	      <div class ="carousel-outer">
+	        <!--  <a class ="previousLink" href ="#"> Previous </a>  --> 
+	         <!--added "class = "previousLink" so we can call it in CSS and JS-->
+	        
+	          <div class="carousel-inner"> 
+	            <!-- <div class ="brightness"> -->
+	              <!-- <figure class = "tint"> --> <!--adds color filter on top of photo, see css-->
+	                <img class="image-shown" src = "img/children.jpeg" alt="" />
+	                <img class="image-hidden" src = "img/farm.jpeg" alt="" />
+	                <img class="image-hidden" src = "img/house.jpeg" alt="" />
+	                <img class="image-hidden" src = "img/water.jpeg" alt="" />
+	              <!-- </div> -->
+	              <!-- </figure> -->
+	          </div>
+	        
+	        <!--added "class = "nextLink" so we can call it in CSS and JS-->
+	        <!-- <a class ="nextLink" href="#">&#10140;</a> --> 
+
+	      </div>
+
+	<div class="two-texts"><!--thought this might center everything below the three pics-->  
+
+	    <div id="bodytext"> 
+	      <br>
+	      <br>
+	        <p> <span class="bold">How it Works</span></p>
+	        <br>
+	        <p>Find an organization that needs knowledge or insight that you can provide</p>
+	        <p> Answer the questions they've posted</p>
+	        <p> See a question a friend might know the answer to? Forward it over! </p>
+	    </div>
+	</div>    
+	    
+	<div class="two-texts">    
+	  <div class="form"> 
+	      <form action="/login" method="post">
+	      <br>
+	        <fieldset> <label><span class="bold">Occupation</span></label>
+	          <select name="Occupation"> 
+	            <option value="Early Childhood Educator" selected>Early Childhood Educator</option>
+	            <option value="Psychologist">Psychologist</option>
+	            <option value="Engineer">Engineer</option>
+	            <option value="Doctor">Doctor</option>
+	          </select>
+	        </fieldset>
+	          <br>
+	          <fieldset> <label><span class="bold">I can provide knowledge to</span></label>
+	          <select name="I can provide knowledge to">  
+	            <option value="Educational Planning" selected>Educational Planning</option>
+	            <option value="Eco-sustainability">Eco-sustainability</option>
+	            <option value="Agricultural Practice ">Agricultural Practice</option>
+	            <option value="Medical Aid">Medical Aid</option>
+	          </select>
+	        </fieldset>
+	          <br>
+	          <fieldset> <label><span class="bold">To projects located in</span></label>
+	          <select name="To projects located in">  
+	            <option value="S. America" selected>S. America</option>
+	            <option value="N. Africa">N. Africa</option>
+	            <option value="Southeast Asia">Southeast Asia</option>
+	            <option value="No Preference">No Preference</option>
+	          </select>
+	        </fieldset>
+	      </form>
+	  </div>    
+
+	</div>      
+
+	<div class="two-texts">
+	  <div class="button">    
+	      <input class="btn btn-default" type="submit" name="submit" value="Get Matches">    
+	  </div>
+	</div>  
+
+	</div>
+
+       <div class="ribbon-wrapper-green">
+       		<div class="ribbon-green">beta</div>
+       </div>
+
+
+</div>
+<!-- END FIRST PAGE HTML -->
+
+<!-- SECOND PAGE HTML STARTS HERE -->
+<div class = "secondpage"> 
+
+	<div class = topsection>
+		<form class = "searchform">
+			<input id = "searchtwo" type="text" placeholder="Search for keywords here: 'Tanzania', 'water', 'education'" required>
+			<input id = "buttontwo" type="button" value="Search">
+		</form>
+	</div>
+
+	<div class="leftpagetwo">
+		
+		<div id="country">
+			<p> Country </p>
+		</div>
+ 		
+ 		<div id="map-canvas"></div>
+
+
+ 		<div id="projecttype">
+			<p> Project Type </p>
+		</div>
+
+	</div>
+
+	<div class="rightpagetwo"></div>
+
+	<div id="footerpagetwo">
+		<p class = "footerstyle">Provide answers and insight for a good cause.
+		</p>
+	</div>
+
+
+</div>
+
+
+</div>	
+<!-- SECOND PAGE HTML ENDS HERE -->
+
+
+    <script src="js/jquery.js"></script> <!-- for performance we include jquery.js in script right before closing body-->
+    <script src="js/custom.js"></script>
+
+</body>
+
+
+
+
+</html>
