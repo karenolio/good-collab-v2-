@@ -65,7 +65,7 @@ $(document).ready(function() {
 		e.preventDefault();
 	})
 
-	setInterval(nextLinkClicked, 2000); //autosliding per every 2 seconds
+	setInterval(nextLinkClicked, 3000); //autosliding per every 2 seconds
 
 
 	//IF THE GET MATCHES BUTTON IS PRESSED, HIDE THE FIRST PAGE. 

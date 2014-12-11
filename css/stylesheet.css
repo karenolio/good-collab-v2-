@@ -18,7 +18,7 @@ clear:left;
 }
 
 body {
-margin: 0;
+  margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background: #EDEFED;
@@ -48,11 +48,8 @@ display: inline-block;
 #bodytext { /* the How it Works section*/
 
 font-family: 'lato', sans-serif;
-font-size: 20px;
 width: 1000px;
 color: #565a5c;
-
-
 /*clear:both; this moves the "How it Works" and forms to go below the 3 pics!*/
 }
 
@@ -119,8 +116,6 @@ option {
 .carousel-outer{
   margin-left: -48px;
   margin-right: 0px;
-
-
 }
 
 .carousel-inner /*container that holds images*/
@@ -184,7 +179,7 @@ option {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 1px;
-  margin-left: 20%;
+  margin-left: 15%;
   background:rgba(0, 0, 0, 0.1);
   font-size: 18px;
   font-family: 'lato', sans-serif;
@@ -226,7 +221,7 @@ option {
 /*left section on page two*/
 .leftpagetwo {
   height: 900px; 
-  width: 40%;
+  width: 37%;
   background-color: white;
   float: left;
 }
@@ -296,7 +291,7 @@ option {
 /*RIBBON CODE ENDS HERE*/
 
 #map-canvas {
-    width: 90%;
+    width: 86%;
     height: 250px;
     position: relative;
     margin-left: 28px;
@@ -349,16 +344,17 @@ p.npodescrip {
   font-size: 16px;
   color: #4CAF50;
   font-style: italic;
+  margin-left: 14px;
 }
 
 p.question {
   float: right;
-  margin-right: 25px;
+  margin-right: 50px;
   font-size: 17px;
 }
 
 #npologo {
-  margin-left: 25px;
+  margin-left: 15px;
   margin-top: 60px;
 }
 
