@@ -71,8 +71,8 @@ $(document).ready(function() {
 	//IF THE GET MATCHES BUTTON IS PRESSED, HIDE THE FIRST PAGE. 
 	//FIRST PAGE IS EVERYTHING ELSE BUT THE TOP BAR ("good collab")
 	$(".button").on("click", function() { 
-		$('.firstpage').hide();
-		$('.secondpage').show();
+		$('.firstpage').fadeOut(1200, "linear"); //instead of hide, I'm using .fadeOut. for options: "swing" is default. 
+		$('.secondpage').fadeIn("slow");
 	})
 
 });
